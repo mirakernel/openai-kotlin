@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class ContentFilterResult(
     @SerialName("filtered") val filtered: Boolean,
-    @SerialName("severity") val severity: String,
+    @SerialName("severity") val severity: String? = null,
 )
 
 @Serializable
